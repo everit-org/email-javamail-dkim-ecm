@@ -24,7 +24,7 @@ import java.security.cert.CertificateException;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
-import org.everit.email.javamail.dkim.ecm.MessageDKIMSignerComponentConstants;
+import org.everit.email.javamail.dkim.ecm.DKIMJavaMailMessageEnancerComponentConstants;
 import org.everit.osgi.ecm.annotation.Activate;
 import org.everit.osgi.ecm.annotation.Component;
 import org.everit.osgi.ecm.annotation.ConfigurationPolicy;
@@ -42,7 +42,7 @@ import aQute.bnd.annotation.headers.ProvideCapability;
 /**
  * Sample KeyStore component.
  */
-@Component(componentId = MessageDKIMSignerComponentConstants.SERVICE_PID,
+@Component(componentId = DKIMJavaMailMessageEnancerComponentConstants.SERVICE_PID,
     configurationPolicy = ConfigurationPolicy.IGNORE)
 @ProvideCapability(ns = ECMExtenderConstants.CAPABILITY_NS_COMPONENT,
     value = ECMExtenderConstants.CAPABILITY_ATTR_CLASS + "" + "=${@class}")

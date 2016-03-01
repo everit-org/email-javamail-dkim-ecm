@@ -18,7 +18,7 @@ package org.everit.email.javamail.dkim.ecm;
 /**
  * Constants for Message DKIMSigner Component.
  */
-public final class MessageDKIMSignerComponentConstants {
+public final class DKIMJavaMailMessageEnancerComponentConstants {
 
   /**
    * References of the component.
@@ -31,38 +31,43 @@ public final class MessageDKIMSignerComponentConstants {
     }
   }
 
-  public static final String ATTR_BODY_CANONICALIZATION = "bodyCanonicalization.value";
+  public static final String ATTR_ADDITIONAL_HEADERS = "additionalHeaders";
+
+  public static final String ATTR_BODY_CANONICALIZATION = "bodyCanonicalization";
+
+  public static final String ATTR_EXCLUDED_HEADERS = "excludedHeaders";
 
   public static final String ATTR_HEADER_CANONICALIZATION = "headerCanonicalization";
 
-  public static final String ATTR_IDENTITY = "identity.value";
+  public static final String ATTR_IDENTITY = "identity";
 
   public static final String ATTR_KEY_STORE = References.SERVICE_REF_KEY_STORE + ".target";
 
-  public static final String ATTR_KEY_STORE_PASSWORD = "keyStorePassword.value";
+  public static final String ATTR_KEY_STORE_PASSWORD = "keyStorePassword";
 
-  public static final String ATTR_PRIVATE_KEY_ALIAS = "privateKeyAlias.value";
+  public static final String ATTR_PRIVATE_KEY_ALIAS = "privateKeyAlias";
 
-  public static final String ATTR_SELECTOR = "selector.value";
+  public static final String ATTR_SELECTOR = "selector";
 
-  public static final String ATTR_SIGNING_ALGORITHM = "signingAlgorithm.value";
+  public static final String ATTR_SIGNING_ALGORITHM = "signingAlgorithm";
 
-  public static final String ATTR_SIGNING_DOMAIN = "signingDomain.value";
+  public static final String ATTR_SIGNING_DOMAIN = "signingDomain";
 
-  public static final String ATTR_USE_LENGTH_PARAM = "useLengthParam.value";
+  public static final String ATTR_USE_LENGTH_PARAM = "useLengthParam";
 
-  public static final String ATTR_Z_PARAM = "zParam.value";
+  public static final String ATTR_Z_PARAM = "zParam";
 
   public static final String CANONICALIZATION_RELAXED = "RELAXED";
 
   public static final String CANONICALIZATION_SIMPLE = "SIMPLE";
 
-  public static final String SERVICE_PID = "org.everit.email.javamail.ecm.MessageDKIMSigner";
+  public static final String SERVICE_PID =
+      "org.everit.email.javamail.ecm.DKIMJavaMailMessageEnancer";
 
   public static final String SIGNING_ALGORITHM_SHA1_WITH_RSA = "SHA1_WITH_RSA";
 
   public static final String SIGNING_ALGORITHM_SHA256_WITH_RSA = "SHA256_WITH_RSA";
 
-  private MessageDKIMSignerComponentConstants() {
+  private DKIMJavaMailMessageEnancerComponentConstants() {
   }
 }
